@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horseman Shoes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="https://i.ibb.co/ZdYv2nF/abstract-running-shoe-symbol-on-600nw-1835744167.jpg" alt="Horseman Logo">
+                <p>GREAT WEAR</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">WE SERVE YOU BETTER !!!</a></li>
+                   
+                </ul>
+            </nav>
+            <div class="icons">
+                <a href="#" id="cart-icon">
+                    <img src="https://i.ibb.co/wwBLkf4/shopping-cart-icon-logo-illustration-trolley-cart-symbol-template-for-graphic-and-web-design-collect.jpg" alt="Cart">
+                    <span id="cart-count" class="count-badge">0</span>
+                </a>
+                <a href="#" id="favorite-icon">
+                    <img src="https://i.ibb.co/6RSrmnN/download.png" alt="Favorites">
+                    <span id="favorite-count" class="count-badge">0</span>
+                </a>
+                <a href="#" id="search-icon"><img src="https://i.ibb.co/h8hwqm7/94156-search-512x512.png" alt="Search"></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="hero">
+            <img src="https://i.ibb.co/cQs015W/indoor-shoes.jpg" alt="Leather Bags">
+            <div class="hero-text">
+                <h1>Great Wear Hub</h1>
+            </div>
+        </div>
+        <section class="products">
+            <div class="product-grid" id="product-grid">
+                <!-- Product items will be injected here by JavaScript -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Great Wear Hub. All rights reserved,developed by ion tech automation(KASOA).</p>
+    </footer>
+
+    <!-- Social Links -->
+    <div class="social-links">
+        <a href="https://www.facebook.com/profile.php?id=100064279864534" target="_blank"><img src="https://i.ibb.co/kGxsJJd/images-13.jpg"  alt="Facebook"></a>
+        <a href="https://wa.me/message/GHTWZCZ3B2VUO1" target="_blank"><img src="https://i.ibb.co/YD9b59v/images-12.jpg" alt="WhatsApp"></a>
+    </div>
+
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="cart-close">&times;</span>
+            <h2>Your Cart</h2>
+            <div id="cart-items">No items in cart.</div>
+            <div id="cart-total">Total: GH.0</div>
+        </div>
+    </div>
+
+    <!-- Favorites Modal -->
+    <div id="favorite-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="favorite-close">&times;</span>
+            <h2>Your Favorites</h2>
+            <div id="favorite-items">No favorite items.</div>
+        </div>
+    </div>
+
+    <!-- Search Modal -->
+    <div id="search-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="search-close">&times;</span>
+            <h2>Search</h2>
+            <input type="text" id="search-input" placeholder="Search...">
+            <button id="search-button">Search</button>
+        </div>
+    </div>
+
+    <!-- Product Details Modal -->
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="product-close">&times;</span>
+            <div id="product-details"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
